@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,11 +13,11 @@ body {
 main {
   margin: auto;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
-button {
-  background-image: linear-gradient(-45deg, rgb(255, 0, 0), blue);
+button#btn {
+  background-image: linear-gradient(-45deg, blue, rgb(255, 0, 0) 60%);
   background-color: #116cb5;
   font-size: 1.2em;
   font-weight: 900;
@@ -29,14 +28,34 @@ button {
   border-radius: 50px;
   transition: 0.3s;
 }
-
-button:hover {
+img {
+  margin-bottom: 30px;
+  width: 200px;
+}
+button#btn:hover {
   cursor: pointer;
+  text-decoration: underline;
   font-size: 1.3em;
   padding: 25px;
 }
 
+button#btnReload {
+  margin-top: 25px;
+  background-color: #b51127;
+  font-size: 1.2em;
+  border: 0px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+button#btnReload:hover {
+  padding: 15px;
+  cursor: pointer;
+}
+
 div#res {
+  font-family: "Courier New", Courier, monospace;
   background-color: #ffa60059;
   padding: 20px;
   margin: auto;

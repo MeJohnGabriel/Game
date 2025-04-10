@@ -2,7 +2,7 @@
 
 const buttonElement = document.getElementById("btn");
 const resultElement = document.getElementById("res");
-
+const btnReloadElement = document.getElementById("btnReload");
 const objectsArray = [
   "Elephant",
   "Penguin",
@@ -39,13 +39,13 @@ const objectsArray = [
   "A cookie that begs you not to eat it",
   "A teddy bear that acts like a grumpy old man",
 ];
-// console.log([...objectsArray]);
+
 buttonElement.addEventListener("click", function () {
   const mathRandom = Math.trunc(Math.random() * objectsArray.length);
   resultElement.textContent = objectsArray[mathRandom];
 
   if (mathRandom >= 29 && mathRandom <= 33) {
-    resultElement.style.color = "lightorange";
+    resultElement.style.color = "#FFCD28";
     resultElement.style.backgroundColor = "black";
   } else {
     resultElement.style.color = "white";
@@ -54,4 +54,7 @@ buttonElement.addEventListener("click", function () {
 
   console.log(resultElement.textContent);
 });
-//29 = 33
+
+btnReloadElement.addEventListener("click", function () {
+  location.reload();
+});
