@@ -13,7 +13,6 @@ body {
 main {
   margin: auto;
   text-align: center;
-  margin-top: 30px;
 }
 
 button#btn {
@@ -28,9 +27,15 @@ button#btn {
   border-radius: 50px;
   transition: 0.3s;
 }
-img {
-  margin-bottom: 30px;
+div#imgBox {
+  margin: auto;
+  margin-bottom: 34px;
+  margin-top: 34px;
+}
+div > img {
+  margin: auto;
   width: 200px;
+  padding: 0;
 }
 button#btn:hover {
   cursor: pointer;
